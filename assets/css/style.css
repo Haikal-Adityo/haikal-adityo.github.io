@@ -174,52 +174,6 @@ img {
     font-size: 16px;
 }
 
-/* PRODUCTS */
-
-#category h2 {
-    padding-left: 120px;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.product {
-    background-color: #F4F4F2;
-    padding: 30px;
-    text-align: center;
-    border-radius: 2px;
-    margin: 10px 15px;
-    cursor: pointer;
-}
-
-.product:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.product:not(:hover) {
-    transform: scale(1);
-    transition: transform 0.3s ease;
-}
-
-.product img {
-    max-width: 100%;
-    max-height: auto;
-}
-
-.product h3 {
-    margin: 10px 0;
-    color: #00b000;
-}
-
-.product p {
-    margin: 0;
-}
-
-
 /* Content */
 #content {
     margin: 0;
@@ -354,21 +308,28 @@ a .btn {
     text-decoration: none;
 }
 
-form .btn {
-    margin-top: 5px;
-}
-
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 50px #F4F4F2 inset;
-}
-
-input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 50px #F4F4F2 inset;
-}
-
-#thankYouMessage {
+/* Add this to your existing CSS */
+.main-div#contact {
     text-align: center;
 }
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between icons */
+    font-size: 64px; /* Adjust the size of the icons */
+    color: #555; /* Adjust icon color */
+    transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+.social-links a:hover {
+    color: #008000; /* Change icon color on hover */
+    transform: scale(1.2); /* Increase size of icon on hover */
+}
+
 
 footer {
     background-color: #0a5a12;
@@ -507,31 +468,12 @@ footer p {
         font-size: 14px;
     }
 
-    #category,
-    #product-carousel {
+    #category {
         text-align: center;
     }
 
     #category h2 {
         padding: 0;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
-        gap: 10px;
-    }
-
-    .product {
-        padding: 0;
-    }
-
-    .product p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .production-photos {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     form button,
@@ -620,31 +562,12 @@ footer p {
         font-size: 14px;
     }
 
-    #category,
-    #product-carousel {
+    #category{
         text-align: center;
     }
 
     #category h2 {
         padding: 0;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
-        gap: 10px;
-    }
-
-    .product {
-        padding: 0;
-    }
-
-    .product p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .production-photos {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     form button,
@@ -687,6 +610,10 @@ footer p {
 
     .btn {
         width: 150px;
+    }
+
+    .social-links a {
+        font-size: 48px;
     }
 }
 

@@ -6,16 +6,33 @@ $(document).ready(function(){
 // Carousel
 $(document).ready(function(){
     var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items: 5,
-        loop: true,
-        margin: 10,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true
+
+    function initCarousel() {
+        var options = {
+            loop: true,
+            margin: 10,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+        };
+
+        if ($(window).width() < 769) {
+            options.items = 3;
+        } else {
+            options.items = 5;
+        }
+
+        owl.owlCarousel(options);
+    }
+
+    initCarousel();
+
+    $(window).resize(function(){
+        owl.trigger('destroy.owl.carousel');
+        initCarousel();
     });
-  
+
     $('.play').on('click', function(){
         owl.trigger('play.owl.autoplay', [1000]);
     });
@@ -23,4 +40,4 @@ $(document).ready(function(){
     $('.stop').on('click', function(){
         owl.trigger('stop.owl.autoplay');
     });
-  });
+});
