@@ -258,8 +258,6 @@ img {
     font-size: 14px;
 }
 
-
-
 form input,
 form textarea {
     width: 100%;
@@ -397,6 +395,10 @@ footer p {
     font-size: 12px;
 }
 
+.title {
+    text-align: center;
+}
+
 /* Animation for thank you message */
 .animate {
     -webkit-animation: fadeIn 1s;
@@ -435,133 +437,18 @@ footer p {
 }
 
 /* Carousel */
-#product-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.wrapper {
-    max-width: 1100px;
-    width: 100%;
+.owl-carousel .item {
     position: relative;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #005400;
-
-}
-
-.wrapper i {
-    top: 50%;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    font-size: 1.25rem;
-    position: absolute;
     text-align: center;
-    line-height: 40px;
-    color: #008000;
-    border: 1px solid #008000;
-    font-size: 12px;
-    transform: translateY(-50%);
-    transition: 0.3s ease;
 }
 
-.wrapper i:hover {
-    color: #fff;
-    background: #008000;
+.owl-carousel .item img {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    object-fit: fill; /* Ensures the image covers the container without stretching */
 }
 
-.wrapper i:active {
-    transform: translateY(-50%) scale(0.85);
-}
-
-.wrapper i:first-child {
-    left: -32px;
-}
-
-.wrapper i:last-child {
-    right: -32px;
-}
-
-.wrapper .carousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc(100% / 3);
-    overflow-x: auto;
-    -ms-scroll-snap-type: x mandatory;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel.no-transition {
-    scroll-behavior: auto;
-}
-
-.carousel.dragging {
-    -ms-scroll-snap-type: none;
-    scroll-snap-type: none;
-    scroll-behavior: auto;
-}
-
-.carousel.dragging .card {
-    cursor: -webkit-grab;
-    cursor: grab;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.carousel :where(.card, .img) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel .card {
-    scroll-snap-align: start;
-    height: auto;
-    list-style: none;
-    cursor: pointer;
-    flex-direction: column;
-    background-color: #F4F4F2;
-    margin: 10px 15px;
-
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-.carousel .card .img {
-    width: 200px;
-    height: auto;
-}
-
-.card .img img {
-    width: 300px;
-    height: auto;
-
-    -o-object-fit: cover;
-
-    object-fit: cover;
-}
-
-.carousel .card Strong {
-    font-weight: 450;
-    font-size: 16px;
-    margin: 10px 0 5px;
-}
-
-.carousel .card p {
-    font-size: 14px;
-}
 
 /* Phone mode */
 @media screen and (max-width: 1280px) {

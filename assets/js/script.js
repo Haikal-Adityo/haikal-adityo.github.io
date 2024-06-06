@@ -15,52 +15,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Form submission
-$(document).ready(function() {
-    // Clear form fields when the page is loaded
-    $('#form')[0].reset();
-});
-
-$('#form').submit(function (e) {
-    e.preventDefault();
-    var userMessage = $('#message').val();
-
-    $.ajax({
-        type: 'POST',
-        url: 'inquiry.php',
-        data: {
-            name: $('#name').val(),
-            email: $('#email').val(),
-            message: userMessage
-        },
-        success: function (response) {
-            console.log(response); // Check the response from inquiry.php
-            // Display the thank you message
-            $('#form')[0].reset(); // Clear form fields
-            $('#form').hide();
-            $('#thankYouMessage').show();
-
-            // Scroll to the bottom of the page slowly
-            const scrollStep = window.innerHeight / 10; // Adjust the speed by changing the divisor
-            let scrollCount = 0;
-
-            const scrollInterval = setInterval(() => {
-                if (scrollCount >= document.body.scrollHeight - window.innerHeight) {
-                    clearInterval(scrollInterval);
-                }
-
-                window.scrollBy(0, scrollStep);
-                scrollCount += scrollStep;
-            }, 20); // Adjust the interval duration for smoother scrolling
-        },
-        error: function (xhr, status, error) {
-            console.error(xhr.responseText);
-            alert('An error occurred while submitting the form.');
-        }
-    });
-
-    return false;
-});
 
 // Scroll event listener for animating sections
 let scrollPosition = window.scrollY || document.documentElement.scrollTop;
@@ -82,12 +36,6 @@ window.addEventListener('scroll', function() {
     }
   });
 });
-
-
-// Force page scroll position to top at page refresh
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
 
 // Header
 const banner = document.getElementById('banner');
@@ -181,5 +129,3 @@ window.addEventListener('load', () => {
     header.classList.add('sticky');
   }
 });
-
-
