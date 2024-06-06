@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    transition: none;
+}
+
+body {
+    background-color: #F4F4F2;
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+header {
+    top: 0;
+    left: 0;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    position: -webkit-sticky;
+    position: sticky;
+    transition: 0.5s ease;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(20px);
+}
+
+header.sticky {
+    background-color: #0a5a12;
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.main-div {
+    padding: 100px 10%;
+    visibility: hidden;
+    background-color: #F4F4F2;
+    position: relative;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+h1,
+h2 {
+    color: #00b000;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    text-decoration: none;
+}
+
+#banner {
+    top: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('TEA_GARDEN.jpg');
+    background-size: cover;
+    background-position: center;
+    display: block;
+    visibility: visible !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.banner-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.banner-content h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.banner-content p {
+    font-size: 18px;
+}
+
+#about {
+    padding: 60px 10%;
+    text-align: left;
+}
+
+#green-world {
+    padding: 35px 10%;
+    text-align: left;
+}
+
+#about h2,
+#green-world h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#about p,
+#green-world p {
+    font-size: 16px;
+}
+
+/* PRODUCTS */
+
+#category h2 {
+    padding-left: 120px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #F4F4F2;
+    padding: 30px;
+    text-align: center;
+    border-radius: 2px;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.product:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.product h3 {
+    margin: 10px 0;
+    color: #00b000;
+}
+
+.product p {
+    margin: 0;
+}
+
+
+/* Content */
+#content {
+    margin: 0;
+    padding: 0;
+    visibility: visible;
+    background-color: #fff;
+}
+
+#content .container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+    padding: 0;
+}
+
+.image-container img {
+    display: block;
+    width: 800px;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    padding: 50px 100px;
+}
+
+.text-container h2 {
+    font-size: 24px;
+}
+
+.text-container p {
+    font-size: 14px;
+}
+
+
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background: #F4F4F2;
+    border: 1px solid #aaa;
+    text-decoration: none;
+    resize: none;
+}
+
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+    color: #000 !important;
+}
+
+form input::-moz-placeholder,
+form textarea::-moz-placeholder {
+    color: #000 !important;
+}
+
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+    color: #000 !important;
+}
+
+form input::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
+    color: #000 !important;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #000 !important;
+}
+
+.btn {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    text-align: left;
+    justify-content: space-between;
+
+    font-size: 14px;
+    color: #008000;
+    background: none;
+    border: solid 1px #008000;
+
+    cursor: pointer;
+    transition: color 0.4s ease linear;
+    position: relative;
+}
+
+.btn:hover {
+    color: #fff;
+    z-index: 0;
+    transition: 0.4s ease;
+}
+
+.btn:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #008000;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.btn::before {
+    transform: scaleX(0);
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+}
+
+.btn:active {
+    transform: translateY(50%);
+}
+
+a .btn {
+    text-decoration: none;
+}
+
+form .btn {
+    margin-top: 5px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px #F4F4F2 inset;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px #F4F4F2 inset;
+}
+
+#thankYouMessage {
+    text-align: center;
+}
+
+footer {
+    background-color: #0a5a12;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.fa-chevron-right {
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+/* Animation for thank you message */
+.animate {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    opacity: 0;
+}
+
+.stay {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    opacity: 1;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Carousel */
+#product-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #005400;
+
+}
+
+.wrapper i {
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    color: #008000;
+    border: 1px solid #008000;
+    font-size: 12px;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+}
+
+.wrapper i:hover {
+    color: #fff;
+    background: #008000;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+    left: -32px;
+}
+
+.wrapper i:last-child {
+    right: -32px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 3);
+    overflow-x: auto;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    -ms-scroll-snap-type: none;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: -webkit-grab;
+    cursor: grab;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: auto;
+    list-style: none;
+    cursor: pointer;
+    flex-direction: column;
+    background-color: #F4F4F2;
+    margin: 10px 15px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.carousel .card .img {
+    width: 200px;
+    height: auto;
+}
+
+.card .img img {
+    width: 300px;
+    height: auto;
+
+    -o-object-fit: cover;
+
+    object-fit: cover;
+}
+
+.carousel .card Strong {
+    font-weight: 450;
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.carousel .card p {
+    font-size: 14px;
+}
+
+/* Phone mode */
+@media screen and (max-width: 1280px) {
+
+    .image-container img {
+        width: 600px;
+    }
+
+    .text-container {
+        padding: 21px;
+    }
+}
+
+@media screen and (max-width: 916px) {
+
+    p {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner-content h1 {
+        font-size: 24px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    #about,
+    #green-world {
+        padding: 15px;
+    }
+
+    #about h2,
+    #green-world h2 {
+        font-size: 26px;
+    }
+
+    #about p,
+    #green-world p {
+        font-size: 14px;
+    }
+
+    #category,
+    #product-carousel {
+        text-align: center;
+    }
+
+    #category h2 {
+        padding: 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+        gap: 10px;
+    }
+
+    .product {
+        padding: 0;
+    }
+
+    .product p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .production-photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form button,
+    form input,
+    form textarea {
+        font-size: 12px;
+    }
+
+    #contact {
+        padding: 50px 20px;
+    }
+
+
+    #content .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .image-container {
+        flex: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .text-container {
+        position: relative;
+        padding: 20px;
+    }
+
+    footer p {
+        line-height: 1;
+        font-size: 12px;
+    }
+
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+
+    p {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner-content h1 {
+        font-size: 24px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    #about,
+    #green-world {
+        padding: 15px;
+    }
+
+    #about h2,
+    #green-world h2 {
+        font-size: 26px;
+    }
+
+    #about p,
+    #green-world p {
+        font-size: 14px;
+    }
+
+    #category,
+    #product-carousel {
+        text-align: center;
+    }
+
+    #category h2 {
+        padding: 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+        gap: 10px;
+    }
+
+    .product {
+        padding: 0;
+    }
+
+    .product p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .production-photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form button,
+    form input,
+    form textarea {
+        font-size: 12px;
+    }
+
+    #contact {
+        padding: 50px 20px;
+    }
+
+    #content .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .image-container {
+        flex: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .text-container {
+        position: relative;
+        padding: 20px;
+    }
+
+    footer p {
+        line-height: 1;
+        font-size: 12px;
+    }
+
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+    .btn {
+        width: 150px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
