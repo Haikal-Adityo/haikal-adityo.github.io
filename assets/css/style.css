@@ -153,24 +153,17 @@ img {
     font-size: 18px;
 }
 
-#about {
-    padding: 60px 10%;
+#project {
+    padding: 0px 10%;
     text-align: left;
 }
 
-#green-world {
-    padding: 35px 10%;
-    text-align: left;
-}
-
-#about h2,
-#green-world h2 {
+#project h2 {
     font-size: 40px;
     padding-bottom: 20px;
 }
 
-#about p,
-#green-world p {
+#project p {
     font-size: 16px;
 }
 
@@ -206,47 +199,35 @@ img {
 
 .text-container h2 {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .text-container p {
     font-size: 14px;
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
+/* Style for Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-image {
+    width: 200px;
+    height: auto;
     margin-bottom: 10px;
-    border-radius: 2px;
-    background: #F4F4F2;
-    border: 1px solid #aaa;
-    text-decoration: none;
-    resize: none;
 }
 
-form input::-webkit-input-placeholder,
-form textarea::-webkit-input-placeholder {
-    color: #000 !important;
-}
-
-form input::-moz-placeholder,
-form textarea::-moz-placeholder {
-    color: #000 !important;
-}
-
-form input:-ms-input-placeholder,
-form textarea:-ms-input-placeholder {
-    color: #000 !important;
-}
-
-form input::-ms-input-placeholder,
-form textarea::-ms-input-placeholder {
-    color: #000 !important;
-}
-
-form input::placeholder,
-form textarea::placeholder {
-    color: #000 !important;
+.project-banner-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .btn {
@@ -453,18 +434,15 @@ footer p {
         font-size: 14px;
     }
 
-    #about,
-    #green-world {
+    #project {
         padding: 15px;
     }
 
-    #about h2,
-    #green-world h2 {
+    #project h2 {
         font-size: 26px;
     }
 
-    #about p,
-    #green-world p {
+    #project p {
         font-size: 14px;
     }
 
@@ -547,18 +525,15 @@ footer p {
         font-size: 14px;
     }
 
-    #about,
-    #green-world {
+    #project {
         padding: 15px;
     }
 
-    #about h2,
-    #green-world h2 {
+    #project h2 {
         font-size: 26px;
     }
 
-    #about p,
-    #green-world p {
+    #project p {
         font-size: 14px;
     }
 
