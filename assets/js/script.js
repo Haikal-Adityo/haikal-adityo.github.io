@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const navbarToggle = document.querySelector('.navbar-toggle');
   const sidebar = document.querySelector('.sidebar');
   const banner = document.getElementById('banner');
-  const mainDivs = document.querySelectorAll('div.animate:not(#banner):not(footer)');
+  const mainDivs = document.querySelectorAll('div.main-div:not(#banner):not(footer)');
   let prevScrollPos = window.scrollY || document.documentElement.scrollTop;
 
   // Scroll to section on navigation link click
