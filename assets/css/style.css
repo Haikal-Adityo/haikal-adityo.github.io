@@ -7,7 +7,7 @@ html {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     line-height: 1.5;
     font-weight: 300;
     scroll-behavior: smooth;
@@ -81,6 +81,10 @@ nav ul li a {
     padding: 10px;
 }
 
+nav ul li a:hover {
+    color: #00e600;
+}
+
 .main-div {
     padding: 100px 10%;
     visibility: hidden;
@@ -92,14 +96,17 @@ nav ul li a {
     visibility: visible !important;
 }
 
-h1,
-h2 {
+h1 {
     color: #00b000;
     margin-bottom: 20px;
 }
+h2 {
+    color: #00b000;
+}
 
 h3 {
-    color: #555;
+    font-size: 16px;
+    color: #008000;
     margin-bottom: 10px;
 }
 
@@ -115,12 +122,17 @@ a {
     text-decoration: none;
 }
 
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
 #banner {
     top: 0;
     padding: 0;
-    height: 100vh;
+    height: 85vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('TEA_GARDEN.jpg');
+    background-image: url('vector (4).png');
     background-size: cover;
     background-position: center;
     display: block;
@@ -130,18 +142,43 @@ a {
     position: relative;
 }
 
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+#tools {
+    background-image: url('vector (2).png');
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    background-image: url('vector (3).png');
+    background-size: cover;
+    background-position: center;
 }
 
 .banner-content {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    left: 40%;
+    transform: translate(-40%, -50%);
+}
+
+.banner-content .banner-text {
+    flex: 1; /* Allow text to take available space */
+    text-align: left; /* Align text to the left */
+    padding-left: 16px; /* Add padding between image and text */
+}
+.banner-content .banner-image img {
+    border-radius: 50%; /* Make the image round */
+    border: 8px solid #0a5a12; /* Add a white border */
+    width: 400px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.banner-content .banner-image {
+    flex: 1; /* Allow image to take available space */
 }
 
 .banner-content h1 {
@@ -149,9 +186,57 @@ img {
     font-weight: 500;
 }
 
-.banner-content p {
+.banner-content h3 {
     font-size: 18px;
+    color: #00b000;
 }
+
+.banner-content p {
+    font-size: 16px;
+}
+
+.about {
+    text-align: center;
+    background-color: white !important; 
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about .text-container {
+    padding: 50px 20%;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about .btn {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: auto;
+    text-align: center;
+
+    font-size: 14px;
+    color: #008000;
+    background: none;
+    border: solid 1px #008000;
+
+    cursor: pointer;
+    transition: color 0.4s ease linear;
+    position: relative;
+}
+
 
 #project {
     padding: 0px 10%;
@@ -228,6 +313,13 @@ img {
     width: 100%;
     border-radius: 16px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project-link {
+    color: #00b000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .btn {
@@ -379,7 +471,9 @@ footer p {
 }
 
 /* Carousel */
-
+.owl-carousel {
+    margin-top: 48px;
+}
 .owl-carousel .item {
     position: relative;
     text-align: center;
@@ -388,7 +482,29 @@ footer p {
 .owl-carousel .item img {
     display: block;
     margin: 0 auto; /* Centers the image horizontally */
-    object-fit: fill; /* Ensures the image covers the container without stretching */
+    max-width: 40%; /* Sets the maximum width of the image to 100% of its container */
+    height: auto; /* Ensures the image maintains its aspect ratio */
+}
+
+.owl-carousel .label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Background color of the label */
+    color: #ffffff; /* Text color of the label */
+    padding: 5px; /* Padding around the label */
+    font-size: 14px; /* Font size of the label */
+}
+
+#portfolio h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#portfolio h1 {
+    text-align: center;
+    padding: 24px;
 }
 
 
@@ -589,6 +705,29 @@ footer p {
 
     .social-links a {
         font-size: 48px;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .banner-content .banner-text {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .banner-content .banner-image img {
+        width: 250px;
+    }
+    .about .text-container {
+        padding: 50px 30px;
     }
 }
 
