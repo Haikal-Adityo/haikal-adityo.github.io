@@ -176,7 +176,6 @@ img {
     height: auto; /* Maintain aspect ratio */
 }
 
-
 .banner-content .banner-image {
     flex: 1; /* Allow image to take available space */
 }
@@ -187,12 +186,12 @@ img {
 }
 
 .banner-content h3 {
-    font-size: 18px;
+    font-size: 20px;
     color: #00b000;
 }
 
 .banner-content p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .about {
