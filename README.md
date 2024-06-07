@@ -18,4 +18,3 @@ Check out the live version of the website here https://haikal-adityo.github.io.
 - JavaScript
 - jQuery
 - Owl Carousel
-- Bootstrap
