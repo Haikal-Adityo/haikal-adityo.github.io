@@ -10,7 +10,7 @@ $(document).ready(function(){
     function initCarousel() {
         var options = {
             loop: true,
-            margin: 10,
+            margin: 0,
             dots: false,
             autoplay: true,
             autoplayTimeout: 3000,
@@ -20,7 +20,7 @@ $(document).ready(function(){
         if ($(window).width() < 769) {
             options.items = 3;
         } else {
-            options.items = 5;
+            options.items = 6;
         }
 
         owl.owlCarousel(options);

@@ -132,7 +132,7 @@ img {
     padding: 0;
     height: 85vh;
     width: 100%;
-    background-image: url('vector (4).png');
+    background-image: url('vector (2).png');
     background-size: cover;
     background-position: center;
     display: block;
@@ -143,13 +143,13 @@ img {
 }
 
 #tools {
-    background-image: url('vector (2).png');
+    background-image: url('vector (3).png');
     background-size: cover;
     background-position: center;
 }
 
 #contact {
-    background-image: url('vector (3).png');
+    background-image: url('vector-3.png');
     background-size: cover;
     background-position: center;
 }
@@ -236,27 +236,14 @@ img {
     position: relative;
 }
 
-
-#project {
-    padding: 0px 10%;
-    text-align: left;
-}
-
-#project h2 {
-    font-size: 40px;
-    padding-bottom: 20px;
-}
-
-#project p {
-    font-size: 16px;
-}
-
 /* Content */
 #content {
-    margin: 0;
+    margin: 32px 5%;
     padding: 0;
     visibility: visible;
-    background-color: #fff;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #content .container {
@@ -428,10 +415,6 @@ footer p {
     font-size: 12px;
 }
 
-.title {
-    text-align: center;
-}
-
 /* Animation for thank you message */
 .animate {
     -webkit-animation: fadeIn 1s;
@@ -470,6 +453,14 @@ footer p {
 }
 
 /* Carousel */
+#tools {
+    padding: 10%;
+    text-align: center;
+}
+#tools h1 {
+    font-size: 36px;
+    text-align: center;
+}
 .owl-carousel {
     margin-top: 48px;
 }
@@ -496,14 +487,18 @@ footer p {
     font-size: 14px; /* Font size of the label */
 }
 
-#portfolio h1 {
-    text-align: center;
+
+#portfolio .text-container h1 {
     font-size: 36px;
 }
 
-#portfolio h1 {
+.portfolio-title {
     text-align: center;
-    padding: 24px;
+    margin-top: 100px;
+}
+
+.portfolio-title h1 {
+    font-size: 36px;
 }
 
 
@@ -660,12 +655,6 @@ footer p {
         padding: 0;
     }
 
-    form button,
-    form input,
-    form textarea {
-        font-size: 12px;
-    }
-
     #contact {
         padding: 50px 20px;
     }
@@ -703,9 +692,62 @@ footer p {
     }
 
     .social-links a {
-        font-size: 48px;
+        font-size: 40px;
     }
 
+    #banner {
+        background-image: url('vector-phone.png');
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 28px !important;
+        font-weight: 500;
+    }
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+    .about p {
+        font-size: 16px !important;
+        text-align: justify;
+    }
+    .banner-content p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    #banner {
+        background-image: url('vector-phone.png');
+    }
+}
+
+@media screen and (max-width: 1525px) {
+    #portfolio h1 {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 12px;
+    }
+    .portfolio-title {
+        text-align: center;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1326px) {
     .banner-content {
         flex-direction: column;
         text-align: center;
@@ -727,12 +769,5 @@ footer p {
     }
     .about .text-container {
         padding: 50px 30px;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .wrapper .carousel {
-        grid-auto-columns: 100%;
     }
 }
