@@ -520,7 +520,7 @@ footer p {
 }
 
 
-#portfolio .text-container h1 {
+#portfolio h1 {
     font-size: 36px;
 }
 
@@ -529,17 +529,11 @@ footer p {
     margin-top: 100px;
 }
 
-.portfolio-title h1 {
-    font-size: 36px;
-}
-
-
 /* Phone mode */
 /* Phone mode */
 @media screen and (max-width: 1525px) {
     #portfolio h1 {
         text-align: center;
-        font-size: 18px;
         padding-bottom: 12px;
     }
     .portfolio-title {
@@ -554,7 +548,7 @@ footer p {
         text-align: center;
     }
     .banner-content h1 {
-        font-size: 32px;
+        font-size: 36px;
         font-weight: 500;
     }
     .banner-content .banner-text {
@@ -655,7 +649,7 @@ footer p {
         margin-bottom: 10px;
     }
     .banner-content h1 {
-        font-size: 24px;
+        font-size: 36px;
     }
     .banner-content p {
         font-size: 14px;
