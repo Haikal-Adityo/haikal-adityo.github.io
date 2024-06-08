@@ -1,9 +1,8 @@
 # Haikal's Portfolio Website
 
 Welcome to the repository for My portfolio website! This website showcases my projects, skills, and experiences. Feel free to explore and get to know more about me and my work.
-Live Demo
 
-Check out the live version of the website here https://haikal-adityo.github.io.
+**[Visit It Here!](https://haikal-adityo.github.io)**
 
 ### Features
 
