@@ -2,52 +2,42 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Leaf</title>
+    <title>Cinurawa Project</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- ===== Fontawesome CDN Link ===== -->
+    <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="icon" type="image/png" href="assets/images/favicon-icon.png">
-
-    <title>Cinurawa Project</title>
 </head>
 
 <body>
 
     <header style="background-color: #0a5a12;">
-        <a href="index.html"><img class="logo" src="assets/images/logo-no-background.png" alt="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">Tools</a></li>
-                <li><a href="index.html#portfolio">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <a href="index.html">
+            <img class="logo" src="assets/images/logo-no-background.png" alt="logo">
+        </a>
+
     </header>
 
     <main>
-
-        <div class="main-div" id="content">
-            <div class="container" id="project">
+        <section id="project">
+            <div class="container">
                 <div class="text-container">
-                    <h2>Cinurawa Company Profile</h2>
-                    <h3><a class="project-link" href="https://cinurawa.propertio.id" target="_blank">cinurawa.propertio.id</a></h3>
-                    <img class="project-banner-image" src="assets/images/cinurawa-landing-page.png">
+                    <h1>Company Profile Project Overview</h1>
+                    <img class="project-banner-image" src="assets/images/cinurawa-landing-page.png" alt="Cinurawa Landing Page">
+
+                    <!-- Project Link Section -->
+                    <section class="project-link-section">
+                        <h3>Visit the Project:</h3>
+                        <a class="project-link" href="https://cinurawa.propertio.id" target="_blank">cinurawa.propertio.id</a>
+                    </section>
+
                     <p>
                         Cinurawa Company Profile was a collaborative project I contributed to as a backend developer. My role primarily involved developing an admin panel and integrating the backend with the frontend using Laravel. For the admin interface, I chose Laravel Filament due to its user-friendly design and efficiency in handling basic CRUD operations.
                     </p>
                     
-                    <!-- Adding Images -->
-                    <div class="image-gallery">
-                        <img src="assets/images/backend-development.jpg" alt="Backend Development" class="project-image">
-                        <img src="assets/images/laravel-logo.png" alt="Laravel Logo" class="project-image">
-                        <img src="assets/images/admin-panel.png" alt="Admin Panel" class="project-image">
-                    </div>
-                    
-                    <!-- Adding Lists -->
+                    <!-- Project Details List -->
                     <ul>
                         <li>Created responsive and efficient admin panel using Laravel Filament.</li>
                         <li>Implemented backend logic for seamless interaction between admin and frontend.</li>
@@ -57,10 +47,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
-
+        </section>
     </main>
-
 
     <footer>
         <p>&copy; 2024 Muhammad Haikal Adityo</p>

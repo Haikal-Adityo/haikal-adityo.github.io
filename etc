@@ -1,0 +1,228 @@
+/* Phone mode */
+@media screen and (max-width: 1525px) {
+    #portfolio h1 {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 12px;
+    }
+    .portfolio-title {
+        text-align: center;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1326px) {
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-content h1 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .banner-content .banner-text {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .banner-content .banner-image img {
+        width: 250px;
+    }
+    .about .text-container {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .image-container img {
+        width: 600px;
+    }
+    .text-container {
+        padding: 21px;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    #project {
+        padding: 15px;
+    }
+    #category {
+        text-align: center;
+    }
+    #category h2 {
+        padding: 0;
+    }
+    #contact {
+        padding: 50px 20px;
+    }
+    #content .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .image-container {
+        flex: 100%;
+    }
+    .image-container img {
+        width: 100%;
+    }
+    .text-container {
+        position: relative;
+        padding: 20px;
+    }
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+    .btn {
+        width: 150px;
+    }
+    .social-links a {
+        font-size: 40px;
+    }
+    #banner {
+        background-image: url('vector-phone.png');
+    }
+    .banner-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    p {
+        font-size: 14px;
+    }
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        font-size: 14px;
+    }
+    header .logo {
+        margin-bottom: 20px;
+    }
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .banner-content h1 {
+        font-size: 24px;
+    }
+    .banner-content p {
+        font-size: 14px;
+    }
+    #project {
+        padding: 15px;
+    }
+    #project h2 {
+        font-size: 26px;
+    }
+    #project p {
+        font-size: 14px;
+    }
+    #category {
+        text-align: center;
+    }
+    #category h2 {
+        padding: 0;
+    }
+    #contact {
+        padding: 50px 20px;
+    }
+    #content .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .image-container {
+        flex: 100%;
+    }
+    .image-container img {
+        width: 100%;
+    }
+    .text-container {
+        position: relative;
+        padding: 20px;
+    }
+    footer p {
+        line-height: 1;
+        font-size: 12px;
+    }
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+    .btn {
+        width: 150px;
+    }
+    .social-links a {
+        font-size: 40px;
+    }
+    #banner {
+        background-image: url('vector-phone.png');
+    }
+    .banner-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 28px !important;
+        font-weight: 500;
+    }
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+    .about p {
+        font-size: 16px !important;
+        text-align: justify;
+    }
+    .banner-content p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-banner-image {
+        max-width: 100%;
+    }
+    .project-link {
+        padding: 15px 25px;
+    }
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-link {
+        padding: 10px 20px;
+    }
+}
