@@ -1,6 +1,8 @@
 # Haikal's Portfolio Website
 
-Welcome to the repository for My portfolio website! This website showcases my projects, skills, and experiences. Feel free to explore and get to know more about me and my work. (This is also my first time using Vue.js)
+Welcome to the repository for My portfolio website! This website showcases my projects, skills, and experiences. Feel free to explore and get to know more about me and my work. 
+
+#(This is also my first time using Vue.js)
 
 **[Visit It Here!](https://haikal-adityo.github.io)**
 
